@@ -1,0 +1,15 @@
+{
+  "name": "fixmyride",
+  "version": "1.0.0",
+  "description": "A On Road and Fuel Assistance website",
+  "license": "ISC",
+  "author": "Vishal, Yash, Mehraj, Vansh",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

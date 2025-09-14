@@ -11,7 +11,7 @@ const TaskStatusEnum = {
   IN_PROGRESS: "in_progress",
   DONE: "done",
 };
-const AvailableTaskStatus = Object.values(taskStatusEnum);
+const AvailableTaskStatus = Object.values(TaskStatusEnum);
 
 export default {
   UserRolesEnum,

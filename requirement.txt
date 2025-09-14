@@ -1,0 +1,40 @@
+User
+Sign up / Login (phone + password, OTP optional).
+Profile (vehicle info, default payment method, address book).
+Share live location; search nearest mechanics/fuel stations via map.
+Request fuel delivery (select fuel type, quantity, delivery address).
+Request mechanic assistance (select issue category, attach image, share location).
+Track service provider ETA on map (live location).
+Confirm service completion; pay (cash/online).
+View booking history (last N bookings).
+Rate & give feedback.
+
+
+Mechanic
+Sign up + verification (documents upload).
+Dashboard: incoming requests, accept/reject, navigation link, status updates (on way, arrived, fixed).
+Update ETA & share live location.
+View earnings / completed jobs history.
+Profile & service areas (radius).
+
+
+
+Fuel Station (or mobile fuel vendor)
+Sign up + verification.
+Manage station profile (fuel types, stock levels, price per liter).
+Accept/decline fuel delivery requests.
+Assign delivery personnel; update delivery status; track delivery vehicle.
+
+Admin
+Verify & approve/reject mechanics & stations (document review).
+Global dashboard: total users, active bookings, revenue metrics, complaints.
+Manage categories, pricing rules, promo codes, service areas.
+View feedback and ban/suspend service providers.
+
+
+Shared / Cross-cutting
+Push & in-app notifications (booking, acceptance, ETAs).
+Real-time location & chat between customer & provider.
+Ratings & review moderation.
+Basic analytics (top mechanics, avg response time).
+Audit logs for critical actions.

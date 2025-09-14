@@ -21,4 +21,8 @@ app.get("/", (req, res) => {
   res.send("Radhe Krishna");
 });
 
+//import the routes
+import healthcheckrouter from "./routes/healthcheck.routes.js";
+app.use("/api/v1/healthcheck", healthcheckrouter);
+
 export default app;

@@ -1,12 +1,13 @@
 import express from "express";
 import cors from "cors";
 const app = express();
+import cookieParser from "cookie-parser";
 
 //basic configurations
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
-
+app.use(cookieParser());
 //cors configuration
 app.use(
   cors({
@@ -23,6 +24,11 @@ app.get("/", (req, res) => {
 
 //import the routes
 import healthcheckrouter from "./routes/healthcheck.routes.js";
+import authRouter from "./routes/auth.routes.js";
+
+//use the routes
+app.use("/api/v1/auth", authRouter);
+
 app.use("/api/v1/healthcheck", healthcheckrouter);
 
 export default app;
